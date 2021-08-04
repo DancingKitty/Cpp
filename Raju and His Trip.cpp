@@ -4,14 +4,8 @@ int main()
 {
 	int n;
 	cin>>n;
-	
 	if((n%5)==0 || (n%6)==0)
-	{
-		cout<<"YES";
-	}
-	
+	cout<<"YES";
 	else
-	{
-		cout<<"NO";
-	}
+	cout<<"NO";
 }

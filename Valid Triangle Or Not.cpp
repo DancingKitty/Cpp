@@ -4,7 +4,6 @@ int main()
 {
 	int a,b,c;
 	cin>>a>>b>>c;
-	
 	if((a+b)>c)
 	{
 		if((a+c)>b)
@@ -12,30 +11,16 @@ int main()
 			if((b+c)>a)
 			{
 				if(a==b && b==c && a==c)
-				{
-					cout<<"NO";
-				}
-				
-				else
-				{
-					cout<<"YES";
-				}
-			}
-			
-			else
-			{
 				cout<<"NO";
+				else
+				cout<<"YES";
 			}
-		}
-		
-		else 
-		{
+			else
 			cout<<"NO";
 		}
-	}
-	
-	else
-	{
+		else 
 		cout<<"NO";
 	}
+	else
+	cout<<"NO";
 }

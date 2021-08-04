@@ -2,18 +2,15 @@
 using namespace std;
 int main()
 {
-	int t,n,a;
+	int t;
 	cin>>t;
 	for(int i=0; i<t; i++)
 	{
-	    int sum=0;
+		int n;
 		cin>>n;
-		while(n!=0)
-		{
-			a=n%10;
-			sum=sum+a;
-			n=n/10;
-		}
-		cout<<sum<<endl;
+		n=n-2;
+		n=n/2;
+		n=n*(n+1)/2;
+		cout<<n<<"\n";
 	}
 }

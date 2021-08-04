@@ -4,14 +4,8 @@ int main()
 {
 	int a,b;
 	cin>>a>>b;
-	
 	if(a>b)
-	{
-		cout<<a-b;
-	}
-	
+	cout<<a-b;
 	else if(b>=a)
-	{
-		cout<<a+b;
-	}
+	cout<<a+b;
 }

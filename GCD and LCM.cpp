@@ -6,11 +6,10 @@ int main()
 	cin>>t;
 	for(int i=0; i<t; i++)
 	{
-		int n;
-		cin>>n;
-		if(n<10)
-		cout<<"Thanks for helping Chef!\n";
-		else
-		cout<<"-1\n";
+	long a,b;
+	cin>>a>>b;
+	long c = __gcd(a,b);
+	long d = ((a*b)/c);
+	cout<<c<<" "<<d<<"\n";
 	}
 }

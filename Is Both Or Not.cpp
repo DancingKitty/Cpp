@@ -4,24 +4,12 @@ int main()
 {
 	int n;
 	cin>>n;
-	
 	if((n%5)==0 && (n%11)==0)
-	{
-		cout<<"BOTH\n";
-	}
-	
+	cout<<"BOTH\n";
 	else if((n%5)!=0 && (n%11)!=0)
-	{
-		cout<<"NONE\n";
-	}
-	
+	cout<<"NONE\n";
 	else if((n%5)!=0 && (n%11)==0)
-	{
-		cout<<"ONE\n";
-	}
-	
+	cout<<"ONE\n";
 	else if((n%5)==0 && (n%11)!=0)
-	{
-		cout<<"ONE\n";
-	}
+	cout<<"ONE\n";
 }

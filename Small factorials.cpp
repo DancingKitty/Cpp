@@ -4,7 +4,6 @@ int main()
 {
 	int n,t;
 	cin>>t;
-	
 	for(int i=0; i<t; i++)
 	{
 	cin>>n;
@@ -14,15 +13,11 @@ int main()
 	{
 		v.push_back(n);
 		if(n==0)
-		{
-			break;
-		}
+		break;
 	}
 	int a=v.size();
 	for(int i=0; i<(a-1); i++)
-	{
-		b=b*v[i];
-	}
+	b=b*v[i];
 	cout<<b;
     }
 }
