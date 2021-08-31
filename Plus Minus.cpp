@@ -3,10 +3,14 @@ using namespace std;
 int main()
 {
 	int n;
-	float plus=0,minus=0,zero=0;
-	float l,m,p;
+	int positive=0;
+	int negative=0;
+	int zero=0;
+	float pfinal;
+
+	int a[100];
+	
 	cin>>n;
-	int a[n];
 	
 	for(int i=0; i<n; i++)
 	{
@@ -17,25 +21,29 @@ int main()
 	{
 		if(a[i]>0)
 		{
-			plus=plus+1;
+			positive=positive+1;
 		}
-		
-		else if(a[i]<0)
+	}
+	
+	for(int i=0; i<n; i++)
+	{
+		if(a[i]<0)
 		{
-			minus=minus+1;
+			negative=negative+1;
 		}
-		
-		else if(a[i]==0)
+	}
+	
+	for(int i=0; i<n; i++)
+	{
+		if(a[i]==0)
 		{
 			zero=zero+1;
 		}
 	}
 	
-	l=plus/n;
-	m=minus/n;
-	p=zero/n;
+	pfinal=(positive/n);
 	
-	printf("%.6f\n",l);
-	printf("%.6f\n",m);
-	printf("%.6f\n",p);
+	printf("%.3f",pfinal);
+	
+	
 }
