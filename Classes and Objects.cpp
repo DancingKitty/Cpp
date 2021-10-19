@@ -1,12 +1,6 @@
-#include <cmath>
-#include <cstdio>
-#include <vector>
-#include <iostream>
-#include <algorithm>
-#include <cassert>
+#include <bits/stdc++.h>
 using namespace std;
 
-// Write your Student class here
 class Student
 {
     public:
