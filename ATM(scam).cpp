@@ -1,12 +1,24 @@
 #include<bits/stdc++.h>
 using namespace std;
-int main() 
+int main()
 {
-	double y;
-	int x;
-	cin>>x>>y;
-	double ans=y;
-	if(x%5==0 && y-x-0.5>=0)
-	ans=ans-x-0.5;
-	cout<<ans<<endl;
+	int a;
+	float b;
+	cin>>a;
+	scanf("%f",&b);
+	if((a%5)==0)
+	{
+		if(b>=(a+0.5))
+		{
+			float c;
+			c=(b-a)-0.5;
+			printf("%.2f",c);
+		}
+		else
+		printf("%.2f",b);
+		
+	}
+	else
+	printf("%.2f",b);
 }
+
