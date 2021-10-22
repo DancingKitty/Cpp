@@ -1,23 +1,17 @@
 #include<bits/stdc++.h>
+#include<boost/multiprecision/cpp_int.hpp>
+using namespace boost::multiprecision;
 using namespace std;
 int main()
 {
-	int n,t;
+	int t;
 	cin>>t;
 	for(int i=0; i<t; i++)
 	{
+	cpp_int n;
 	cin>>n;
-	vector<int> v;
-	int b=n;
-	while(n--)
-	{
-		v.push_back(n);
-		if(n==0)
-		break;
+	for(cpp_int i=(n-1); i>=1; i--)
+	n=n*i;
+	cout<<n<<"\n";
 	}
-	int a=v.size();
-	for(int i=0; i<(a-1); i++)
-	b=b*v[i];
-	cout<<b;
-    }
 }
