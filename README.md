@@ -1,2 +1,2 @@
-CPP Programs written by me so far... These are solutions of CP problems across various sites like CodeChef, HackerRank, Codeforces.  
+These are solutions of CP problems attempted by me across various sites like CodeChef, HackerRank, Codeforces.  
 
