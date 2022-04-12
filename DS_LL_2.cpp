@@ -1,3 +1,5 @@
+// Linked-List : Inserting Node at Nth Position
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -6,7 +8,7 @@ struct Node{
     Node* next;
 };
 
-Node* head;
+Node* head=NULL;
 
 void Insert(int n, int x){
     Node* temp1=new Node();
@@ -37,8 +39,9 @@ void PrintList(){
 }
 
 int main(){
-    head=NULL;
     Insert(2,1);
     Insert(3,2);
+    Insert(5,1);
+    Insert(4,2);
     PrintList();
 }

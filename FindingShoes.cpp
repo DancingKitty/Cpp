@@ -12,19 +12,15 @@ using namespace std;
 
 signed main(){
     fastio;
-
-	int n,a=0;
-	cin>>n;
-	for(int i=0; i<n; i++)
-	{
-		string s;
-		cin>>s;
-		if(s=="++X" || s=="X++")
-		a=a+1;
-		else if(s=="--X" || s=="X--")
-		a=a-1;
-	}
-	cout<<a;    
-
+    
+    int t;
+    cin>>t;
+    for(int i=0; i<t; i++){  
+        int n,m;
+        cin>>n>>m;
+        if(n==m) cout<<m<<"\n";
+        else if(n>m) cout<<(2*n)-m<<"\n";
+        else if(n<m) cout<<n<<"\n";
+    }
     return 0;
 }

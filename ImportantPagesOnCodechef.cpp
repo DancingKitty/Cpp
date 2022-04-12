@@ -12,19 +12,14 @@ using namespace std;
 
 signed main(){
     fastio;
+    
 
-	int n,a=0;
-	cin>>n;
-	for(int i=0; i<n; i++)
-	{
-		string s;
-		cin>>s;
-		if(s=="++X" || s=="X++")
-		a=a+1;
-		else if(s=="--X" || s=="X--")
-		a=a-1;
-	}
-	cout<<a;    
+    int a,b; 
+    cin>>a>>b;
+    if(a==1 && b==1) cout<<"https://discuss.codechef.com\n";
+    else if(a==0 && b==0) cout<<"https://www.codechef.com/practice\n";
+    else if(a==0 && b==1) cout<<"https://www.codechef.com/practice\n";
+    else if(a==1 && b==0) cout<<"https://www.codechef.com/contests\n";
 
     return 0;
 }

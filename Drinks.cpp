@@ -12,19 +12,17 @@ using namespace std;
 
 signed main(){
     fastio;
-
-	int n,a=0;
-	cin>>n;
-	for(int i=0; i<n; i++)
-	{
-		string s;
-		cin>>s;
-		if(s=="++X" || s=="X++")
-		a=a+1;
-		else if(s=="--X" || s=="X--")
-		a=a-1;
-	}
-	cout<<a;    
+    
+    int n;
+    float total=0;
+    cin>>n;
+    for(int i=0; i<n; i++){
+        float a;
+        cin>>a;
+        total+=a/100;
+    }
+    float final=((total)/n)*100;
+    printf("%.12f", final);
 
     return 0;
 }

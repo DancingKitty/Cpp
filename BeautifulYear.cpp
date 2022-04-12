@@ -1,6 +1,3 @@
-//author : elvenblade
-//जय हिंद, जय महाराष्ट्र !
-
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long
@@ -13,18 +10,11 @@ using namespace std;
 signed main(){
     fastio;
 
-	int n,a=0;
-	cin>>n;
-	for(int i=0; i<n; i++)
-	{
-		string s;
-		cin>>s;
-		if(s=="++X" || s=="X++")
-		a=a+1;
-		else if(s=="--X" || s=="X--")
-		a=a-1;
-	}
-	cout<<a;    
+    int a;
+    cin>>a;
+    for(int i=(a+1); i<=9999; i++){
+        if((i%10 != (i%100)/10) && (i%10 != (i%1000)/100) && (i%10 != (i%10000)/1000) && ((i%100)/10 != (i%1000)/100) && ((i%100)/10 != (i%10000)/1000) && ((i%1000)/100 != (i%10000)/1000)){cout<<i;break;}
+    }
 
     return 0;
 }

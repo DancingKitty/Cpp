@@ -12,19 +12,10 @@ using namespace std;
 
 signed main(){
     fastio;
+    
+    int a,b,c,x;
+    cin>>a>>b>>c>>x;
+    if(a==x || b==x || c==x) cout<<"Yes\n";
+    else cout<<"No\n";
 
-	int n,a=0;
-	cin>>n;
-	for(int i=0; i<n; i++)
-	{
-		string s;
-		cin>>s;
-		if(s=="++X" || s=="X++")
-		a=a+1;
-		else if(s=="--X" || s=="X--")
-		a=a-1;
-	}
-	cout<<a;    
-
-    return 0;
 }
