@@ -14,12 +14,13 @@ using namespace std;
 signed main(){
     fastio;
     
-    int t;
-    cin>>t;
-    for(int i=0; i<t; i++){  
+    int n;
+    bool a=true;
+    while(a){
+        cin>>n;
+        if(n==42) a=false;
+        else cout<<n<<"\n";
     }
+
     return 0;
 }
-
-
-

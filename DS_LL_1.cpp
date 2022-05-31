@@ -20,7 +20,7 @@ void InsertNode(int x){
 void PrintList(){
     Node* temp=head;
     while(temp!=NULL){
-        cout<<temp->data;
+        cout<<temp->data<<"\n";
         temp=temp->next;
     }
 };

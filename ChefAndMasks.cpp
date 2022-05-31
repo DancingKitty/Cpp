@@ -9,7 +9,6 @@ using namespace std;
 #define vpb v.push_back
 #define asort sort(a,a+n)
 #define vv vector<int> v
-#define rev reverse(a, a+n) 
 
 signed main(){
     fastio;
@@ -17,9 +16,10 @@ signed main(){
     int t;
     cin>>t;
     for(int i=0; i<t; i++){  
+        int x,y;
+        cin>>x>>y;
+        if((y*10)>(x*100)) cout<<"Disposable\n";
+        else cout<<"Cloth\n";
     }
     return 0;
 }
-
-
-

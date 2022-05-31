@@ -17,9 +17,12 @@ signed main(){
     int t;
     cin>>t;
     for(int i=0; i<t; i++){  
+        int x;
+        cin>>x;
+        if(x<=30) cout<<"NO\n";
+        else cout<<"YES\n";
     }
     return 0;
 }
-
 
 

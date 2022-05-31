@@ -9,17 +9,18 @@ using namespace std;
 #define vpb v.push_back
 #define asort sort(a,a+n)
 #define vv vector<int> v
-#define rev reverse(a, a+n) 
+#define rev reverse(a, a+n)
+#define map map<int,int> m  
 
 signed main(){
     fastio;
     
-    int t;
-    cin>>t;
-    for(int i=0; i<t; i++){  
+    int k,l,m,n,d,count=0;
+    cin>>k>>l>>m>>n>>d;
+    for(int i=1; i<=d; i++){
+        if(i%k==0 || i%l==0 || i%m==0 || i%n==0) count++;
     }
+    cout<<count<<"\n";
+
     return 0;
 }
-
-
-

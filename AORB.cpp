@@ -9,7 +9,7 @@ using namespace std;
 #define vpb v.push_back
 #define asort sort(a,a+n)
 #define vv vector<int> v
-#define rev reverse(a, a+n) 
+#define rev reverse(a, a+n)
 
 signed main(){
     fastio;
@@ -17,9 +17,10 @@ signed main(){
     int t;
     cin>>t;
     for(int i=0; i<t; i++){  
+        int x,y;
+        cin>>x>>y;
+        if((500-(2*x)+1000-(4*(x+y)))>=(1000-(4*y)+500-(2*(x+y)))) cout<<500-(2*x)+1000-(4*(x+y))<<"\n";
+        else cout<<1000-(4*y)+500-(2*(x+y))<<"\n";
     }
     return 0;
 }
-
-
-

@@ -9,7 +9,8 @@ using namespace std;
 #define vpb v.push_back
 #define asort sort(a,a+n)
 #define vv vector<int> v
-#define rev reverse(a, a+n) 
+#define rev reverse(a, a+n)
+#define map map<int,int> m  
 
 signed main(){
     fastio;
@@ -17,9 +18,10 @@ signed main(){
     int t;
     cin>>t;
     for(int i=0; i<t; i++){  
+        int a,b;
+        cin>>a>>b;
+        if(a%b==0) cout<<0<<"\n";
+        else cout<<b-(a%b)<<"\n";
     }
     return 0;
 }
-
-
-

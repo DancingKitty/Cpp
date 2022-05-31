@@ -17,9 +17,16 @@ signed main(){
     int t;
     cin>>t;
     for(int i=0; i<t; i++){  
+        int n,sum=0,count=0;
+        cin>>n;
+        int a[n];
+        for(int i=0; i<n; i++){
+            cin>>a[i];
+            sum+=a[i];
+        }
+        for(int i=0; i<n; i++) if(sum-a[i]==((n-1)*a[i])) count++;
+        if(count>=1) cout<<"YES\n";
+        else cout<<"NO\n";
     }
     return 0;
 }
-
-
-

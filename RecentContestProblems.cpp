@@ -9,7 +9,7 @@ using namespace std;
 #define vpb v.push_back
 #define asort sort(a,a+n)
 #define vv vector<int> v
-#define rev reverse(a, a+n) 
+#define rev reverse(a, a+n)
 
 signed main(){
     fastio;
@@ -17,9 +17,15 @@ signed main(){
     int t;
     cin>>t;
     for(int i=0; i<t; i++){  
+        int n,s1=0,l1=0;
+        cin>>n;
+        for(int i=0; i<n; i++){
+            string s;
+            cin>>s;
+            if(s=="LTIME108") s1++;
+            else l1++;
+        }
+        cout<<s1<<" "<<l1<<"\n";
     }
     return 0;
 }
-
-
-

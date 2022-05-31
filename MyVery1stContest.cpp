@@ -14,12 +14,10 @@ using namespace std;
 signed main(){
     fastio;
     
-    int t;
-    cin>>t;
-    for(int i=0; i<t; i++){  
-    }
+    int n,a,b;
+    cin>>n>>a>>b;
+    cout<<n-a<<" "<<n-a-b<<"\n";
+    
     return 0;
 }
-
-
 
