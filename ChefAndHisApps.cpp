@@ -8,19 +8,21 @@ using namespace std;
 #define vsort sort(v.begin(),v.end())
 #define vpb v.push_back
 #define asort sort(a,a+n)
- 
+#define vv vector<int> v
+#define rev reverse(a, a+n) 
+
 signed main(){
     fastio;
     
-    int n,h,count=0;
-    cin>>n>>h;
-    for(int i=0; i<n; i++){
-        int a;
-        cin>>a;
-        if(a>h) count+=2;
-        else count++;
+    int t;
+    cin>>t;
+    for(int i=0; i<t; i++){  
+        int s,x,y,z;
+        cin>>s>>x>>y>>z;
+        int k=s-(x+y);
+        if(k>=z) cout<<0<<"\n";
+        else if((s-x)>=z || (s-y)>=z) cout<<1<<"\n";
+        else cout<<2<<"\n";
     }
-    cout<<count;
- 
     return 0;
 }
